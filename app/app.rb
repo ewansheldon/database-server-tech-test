@@ -8,7 +8,7 @@ class ServerApp < Sinatra::Base
   get '/' do
   end
 
-  get '/set' do
+  post '/set' do
     $store = DataStore.new
     $store.store_data(params)
     redirect '/'
