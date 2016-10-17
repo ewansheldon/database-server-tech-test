@@ -1,4 +1,5 @@
 require 'sinatra/base'
+# require './models/data_store.rb'
 
 class ServerApp < Sinatra::Base
 
@@ -8,8 +9,9 @@ class ServerApp < Sinatra::Base
     ''
   end
 
-  post '/set' do
-    sessions[:name] = params[:name]
+  get '/set' do
+    # @store = DataStore.new(params[:name], params[:name])
+    puts params
     redirect '/'
   end
 

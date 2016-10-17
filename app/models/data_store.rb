@@ -1,11 +1,15 @@
 class DataStore
 
-  def initialize(key, value)
-    @data = {key => value}
+  def initialize
+    @data = []
+  end
+
+  def store_data(hash)
+    @data << hash
   end
 
   def show_data(key)
-    @data[key]
+    @data[0][key]
   end
 
 end
