@@ -9,7 +9,7 @@ class DataStore
   end
 
   def show_data(key)
-    @data[0][key]
+    @data.each { |hash| return hash[key] unless hash[key].nil?}
   end
 
 end
