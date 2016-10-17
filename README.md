@@ -16,4 +16,5 @@ Create a new git repository and write code to fulfill the brief to the best of y
 
 1. Clone this repository
 2. Change into the directory and run `ruby app/app.rb`
-3. Follow the instructions as above - set new values by making a http request to http://localhost:4000/set?somekey=somevalue with the data you wish to save, and access this data by making a request to http://localhost:4000/get?key=somekey
+3. Navigate to http://localhost:9292/ on your web browser
+4. Follow the instructions as above - set new values by making a http request to http://localhost:4000/set?somekey=somevalue with the data you wish to save, and access this data by making a request to http://localhost:4000/get?key=somekey
