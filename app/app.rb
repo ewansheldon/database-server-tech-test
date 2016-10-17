@@ -8,6 +8,11 @@ class ServerApp < Sinatra::Base
     ''
   end
 
+  post '/set' do
+    sessions[:name] = params[:name]
+    redirect '/'
+  end
+
 
 
   # start the server if ruby file executed directly

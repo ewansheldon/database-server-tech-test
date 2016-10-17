@@ -8,5 +8,8 @@ feature 'server' do
 end
 
 feature 'set' do
-  scenario ''
+  scenario 'it has a setting route' do
+    visit '/set?name=ewan'
+    expect(page.current_path).to eq('/')
+  end
 end
