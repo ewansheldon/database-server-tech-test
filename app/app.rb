@@ -4,7 +4,6 @@ require_relative './models/data_store.rb'
 class ServerApp < Sinatra::Base
 
   set :port, 4000
-  enable :sessions
 
   get '/' do
   end
